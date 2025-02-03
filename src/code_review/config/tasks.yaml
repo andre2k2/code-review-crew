@@ -1,0 +1,17 @@
+code_review:
+  description: |
+    Use file read tool to read the content of java class.
+    Conduct a review of the java code observing the clean code principles.
+  expected_output: |
+    A bullet list of advices how to improve code quality each part of class.
+  agent: clean_code_reviewer
+
+code_write:
+  description: |
+    Use file read tool to read the content of java class.
+    Follow the advices then change code to improve code quality. 
+    Use file write tool to write the classes content.
+  expected_output: |
+    A fully functional java class.
+    A list of reasoning each improve explaining it.
+  agent: clean_code_writer
