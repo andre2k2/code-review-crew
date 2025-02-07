@@ -52,7 +52,7 @@ class CodeReview():
 	def code_write(self) -> Task:
 		return Task(
 			config=self.tasks_config['code_write'],
-			output_file='tests/output/TaxCalculationService'
+			output_file='./tests/output/results.md'
 		)
 
 	@crew
